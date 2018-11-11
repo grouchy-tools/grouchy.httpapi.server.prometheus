@@ -34,7 +34,7 @@ task Build {
 }
 
 task Test -depends Build {
-   exec { dotnet restore $TestProjectPath }
+#   exec { dotnet restore $TestProjectPath }
 #   exec { dotnet test $TestProjectPath -c $Configuration -f netcoreapp2.0 }
    #exec { dotnet test $TestProjectPath -c $Configuration -f net451 }
 }
